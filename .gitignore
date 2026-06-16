@@ -39,7 +39,6 @@ output/*
 *.webm
 
 # Model weights / generated ML artifacts
-*.pt
 *.pth
 *.onnx
 *.engine
