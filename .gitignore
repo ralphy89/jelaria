@@ -1,0 +1,51 @@
+# Python virtual environments
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Python cache / build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+
+# IDE / editor metadata
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Data outputs
+*.csv
+output/*
+!output/.gitkeep
+
+# Video files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+
+# Model weights / generated ML artifacts
+*.pt
+*.pth
+*.onnx
+*.engine
+*.weights
+runs/
+
+# Local helper scripts
+visualize.py
+add_missing_data.py
