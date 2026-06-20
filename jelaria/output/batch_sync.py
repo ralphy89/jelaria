@@ -17,6 +17,7 @@ def _row_to_payload(row):
     """Convert a CSV row dict into the standard JSON payload."""
     return create_detection_payload(
         camera_id=settings.CAMERA_ID,
+        node_id=settings.NODE_ID,
         timestamp=datetime.now().isoformat(),
         frame_nmr=row["frame_nmr"],
         car_id=row["car_id"],

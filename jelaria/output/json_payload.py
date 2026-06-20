@@ -3,6 +3,7 @@
 
 def create_detection_payload(
     camera_id,
+    node_id,
     timestamp,
     frame_nmr,
     car_id,
@@ -30,6 +31,7 @@ def create_detection_payload(
     """
     return {
         "camera_id": camera_id,
+        "node_id" : node_id,
         "timestamp": timestamp,
         "frame_nmr": int(frame_nmr),
         "car_id": int(car_id),

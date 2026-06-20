@@ -135,6 +135,7 @@ def run_pipeline(
             # --- Step 13: Build JSON payload ---
             payload = create_detection_payload(
                 settings.CAMERA_ID,
+                settings.NODE_ID,
                 datetime.now().isoformat(),
                 frame_nmr,
                 car_id,
@@ -147,6 +148,8 @@ def run_pipeline(
             )
 
             print(f"Plate saved: {payload}")
+            sync_csv_to_server()
+
 
     cap.release()
     print(f"Processing complete. {csv_writer.row_count} unique vehicle(s) recognized.")
