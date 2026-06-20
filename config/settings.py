@@ -46,7 +46,7 @@ VEHICLE_CLASS_IDS = [2, 3, 5, 7]
 # ---------------------------------------------------------------------------
 # OCR and quality thresholds
 # ---------------------------------------------------------------------------
-OCR_CONFIDENCE_THRESHOLD = 0.70
+OCR_CONFIDENCE_THRESHOLD = 0.74
 
 # EasyOCR: set gpu=True on Jetson Orin Nano when CUDA is available
 OCR_USE_GPU = False
