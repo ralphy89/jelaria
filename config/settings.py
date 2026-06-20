@@ -27,7 +27,7 @@ OUTPUT_CSV_PATH = os.path.join(PROJECT_ROOT, "output", "results.csv")
 # ---------------------------------------------------------------------------
 CAMERA_ID = "1"
 NODE_ID = "JETSON_NANO_NODE_1"
-SERVER_URL = f"https://tracage-vehicule.onrender.com/api/detections/batch/"
+SERVER_URL = f"https://jelaria-stream.onrender.com/api/detections/batch/"
 SEND_TO_SERVER = True  # Set True to POST results to the backend
 SERVER_TIMEOUT_SECONDS = 3
 
